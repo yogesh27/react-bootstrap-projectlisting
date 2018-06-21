@@ -1,0 +1,27 @@
+.projectItem--wrapper{
+    margin-top: 1em;
+}
+
+.projectItem{
+    background: #80808029;
+    padding: 10px;
+    border-radius: 2px;
+    cursor: pointer;
+    border: 1px solid #80808029;
+}
+
+.projectItem .projectItem--title{
+    font-weight: bold;
+}
+
+.projectItem .projectItem--country{
+    margin-bottom: 0px;
+}
+
+.pagination-wrapper{
+    text-align: right;
+}
+
+.projectItem:hover{
+    box-shadow: 0px 4px 10px 2px #88888836;
+}

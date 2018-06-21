@@ -1,0 +1,25 @@
+#myform{
+    float: left;
+    width: 40%;
+    margin-left: 10%;
+}
+
+#create-project-btn{
+    margin-top: 15px;
+}
+
+
+#arc-success-msg, 
+#arc-error-msg{
+    margin-top: 20px;
+    display: none;
+}
+
+input {
+    margin: 5px;
+    margin-bottom: 10px;
+}
+
+form {
+    padding-right: 10px;   
+}

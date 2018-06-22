@@ -21,6 +21,9 @@ class Header extends Component {
                         <NavItem eventKey={3} componentClass={Link} href="/add-project" to="/add-project">
                             Add Project
                         </NavItem>
+                        <NavItem eventKey={3} componentClass={Link} href="/add-projects" to="/add-projects">
+                            Add Project (multi-step)
+                        </NavItem>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>

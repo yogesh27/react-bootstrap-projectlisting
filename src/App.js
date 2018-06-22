@@ -7,6 +7,7 @@ import ProjectDetails from './components/projectDetails/ProjectDetails';
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 import AddProject from './components/addProject/AddProject';
+import AddProjects from './components/addProjects/AddProjects';
 
 class App extends Component {
     render() {
@@ -18,6 +19,7 @@ class App extends Component {
                     <Route path="/home" component={Home} />
                     <Route path="/projects" component={Projects} />
                     <Route path="/add-project" component={AddProject} />
+                    <Route path="/add-projects" component={AddProjects} />
                     <Route path="/project/:nid" exact strict 
                         component={ProjectDetails} />
                     <Footer/>

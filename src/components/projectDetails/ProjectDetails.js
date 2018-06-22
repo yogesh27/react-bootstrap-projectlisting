@@ -30,9 +30,9 @@ class ProjectDetails extends Component {
         error: null
     }
 
-    componentDidMount() {
+    getProjectDetails(nid){
         axios
-        .get('http://dev-react-drupal8-app1.pantheonsite.io/api/v1/arcprojects/'+this.props.match.params.nid+'/?_format=json')
+        .get('http://dev-react-drupal8-app1.pantheonsite.io/api/v1/arcprojects/'+nid+'/?_format=json')
         .then(res => {
             const data = res.data[0];
             this.setState({
@@ -66,6 +66,10 @@ class ProjectDetails extends Component {
         });
     }
 
+    componentDidMount() {
+        this.getProjectDetails(this.props.match.params.nid);
+    }
+
     renderLoading() {
         return <div>Loading...</div>;
     }
@@ -78,7 +82,7 @@ class ProjectDetails extends Component {
         );
     }
 
-    renderProjects() {
+    renderProjectDetails() {
         const data = this.state.projectDetails;
         const error = this.state.error;
         if (error) {
@@ -113,7 +117,7 @@ class ProjectDetails extends Component {
             <Grid className="content-wrapper">
                 <Row className="show-grid">
                     <h3>Project Details</h3>
-                    {loading ? this.renderLoading() : this.renderProjects()}
+                    {loading ? this.renderLoading() : this.renderProjectDetails()}
                 </Row>
             </Grid>
         )

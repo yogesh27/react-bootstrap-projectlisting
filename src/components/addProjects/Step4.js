@@ -112,7 +112,7 @@ export default class Step4 extends Component {
     return (
       <div className="step step4 review">
         <div className="row">
-          <form id="Form" className="form-horizontal">
+          <form id="Form" className="">
             <div className="form-group">
               <label className="col-md-12 control-label">
                 <h1>Step 4: Review your Details and 'Submit'</h1>

@@ -20,7 +20,7 @@ export default class Step5 extends Component {
     return (
       <div className="step step5">
         <div className="row">
-          <form id="Form" className="form-horizontal">
+          <form id="Form" className="">
             <div className="form-group">
               <label className="col-md-12 control-label">
                 {

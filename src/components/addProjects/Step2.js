@@ -82,7 +82,7 @@ class Step2 extends Component {
 		return (
 			<div className="step step1">
 				<div className="row">
-					<form id="Form" className="form-horizontal">
+					<form id="Form" className="">
 						<div className="form-group">
 							<label className="control-label col-md-12 ">
 								<h1>Step 2: Owner Details</h1>
